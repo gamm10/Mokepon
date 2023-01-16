@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #FFFBEB;
+}
+
+#selecionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    background-color: #ffd845;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 32px;
+}
+
+.subtitulo {
+    padding: 8px;
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    background: #22A39F;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.tarjeta-de-mokepon img {
+    width: 220px;
+    height: 220px;
+    border-radius: 20px;
+}
+
+.tarjeta-de-mokepon p {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+#boton-mascota {
+    width: 180px;
+    height: 40px;
+    background: #F3EFE0;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+input {
+    display: none;
+}
+
+input:checked  + label {
+    background: #a5c91e;
+}
+
+#selecionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+#boton-fuego{
+    background-color: #ff0000;
+}
+
+#boton-agua{
+    background-color: #00a6ff;
+}
+
+#boton-tierra{
+    background-color: #53b358d6;
+}
+
+.boton-de-ataque{
+    padding: 10px;
+    width: 136px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#mensajes{
+    width: 491px;
+    background: #c0eeff;
+    padding: 20px;
+    margin-top: 20px;
+    margin-block-end: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#boton-reiniciar{
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    height: 40px;
+    background: #F3EFE0;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+@media (max-width: 1611px){
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 300){
+    #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
